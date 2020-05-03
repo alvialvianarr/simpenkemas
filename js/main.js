@@ -1,43 +1,63 @@
-
 (function ($) {
     "use strict";
 
     
     /*==================================================================
     [ Validate ]*/
-    var input = $('.validate-input .input100');
-
-    $('.validate-form').on('submit',function(){
-        var check = true;
-
-        for(var i=0; i<input.length; i++) {
-            if(validate(input[i]) == false){
-                showValidate(input[i]);
-                check=false;
-            }
-        }
-
-        return check;
+    $("#form-login").validate({
+        rules: {
+            password: {
+                required: true,
+            },
+            user_username: {
+                required: true,
+                username: true
+            },
+        },
+        messages: {
+            password: {
+                required: "please enter your password"
+            },
+            user_username: "please enter your username address",
+        },
+        submitHandler: submitForm
     });
+    /* SUBMIT LOGIN */
+    function submitForm(){
+        var input = $("#form-login").serialize();
 
+        $.ajax({
+            type: 'POST',
+            url: 'cek_login.php',
+            data: input,
+            beforeSend: function() {
+                $("#error").fadeOut();
+                $("#btn-login").html(
+                    '<span class="glyphicon glyphicon-transfer"></span>   sending ...');
+            },
+            success: function(response) {
+                if (response == "ok") {
 
-    $('.validate-form .input100').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
+                    $("#btn-login").html(
+                        '<img src="https://github.com/maulayyacyber/phantom0308/raw/master/btn-ajax-loader.gif" />   Signing In ...'
+                        );
+                    setTimeout(' window.location.href = "index2.php.php"; ', 4000);
+                } else {
+
+                    $("#error").fadeIn(1000, function() {
+
+                        $("#error").html(
+                            '<div class="alert alert-danger"> <span class="glyphicon glyphicon-info-sign"></span>   alamat username atau password salah!.</div>'
+                            );
+                        $("#btn-login").html(
+                            '<span class="glyphicon glyphicon-log-in"></span>   Sign In'
+                            );
+
+                    });
+                }
+            }
         });
-    });
-
-    function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
-            }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
-        }
+        return false;
     }
 
     function showValidate(input) {
