@@ -49,11 +49,8 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-
-
-    function submitForm();
-
-})(jQuery);
+    submitHandler: submitForm
+})
 /* SUBMIT LOGIN */
 function submitForm() {
     var input = $("#form-login").serialize();
@@ -90,4 +87,5 @@ function submitForm() {
         }
     });
     return false;
-};
+}
+(jQuery);
