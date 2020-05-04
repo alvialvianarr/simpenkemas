@@ -1,13 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Selamat Datang di SIPKEMAS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/bootstrap.min.js" />
+
+    <title>Selamat Datang di SIMPENKEMAS</title>
 </head>
 
 <body>
-    <h1>Selamat Datang di SIPKEMAS</h1>
-    <h4>Sistem Penilaian Keaktifan Mahasiswa Program Studi Ilmu Keperawatan</h4>
-    <h5>Universitas Muhammadiyah Yogyakarta</h5>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default bg-success">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Sistem Penilaian Online |</a>
+            </div>
+
+            <a href="#">
+                <img src="assets/img/logo_umy.png" width="40" height="40" alt="Profile">
+                Administrator
+            </a>
+
+        </nav>
+    </div>
 </body>
 
 </html>
