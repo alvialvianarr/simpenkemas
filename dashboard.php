@@ -10,15 +10,8 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="assets/img/logo_umy.png" sizes="180x180">
     <link rel="icon" href="assets/img/logo_umy.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/img/logo_umy.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
-
 
     <style>
     .bd-placeholder-img {
@@ -37,7 +30,7 @@
     }
     </style>
     <!-- Custom styles for this template -->
-    <link href="assets/dashboard/dashboard.css" rel="stylesheet">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
     <style type="text/css">
     /* Chart.js */
     @-webkit-keyframes chartjs-render-animation {
@@ -68,20 +61,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark fixed-top bg-success flex-md-nowrap p-0">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="dashboard.php">Sistem Penilaian Online</a>
-        <div class="navbar-expand-sm">
-            <a class="navbar-dark navbar-left" href="index.php">Universitas Muhammadiyah Yogyakarta</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark fixed-top bg-success flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="dashboard.php"
+            style="font-size: 1rem;line-height: 31px;letter-spacing: 0.039em;font-weight: 400;">Sistem Penilaian
+            Online</a>
+        <div class="container-fluid flex-auto">
+            <a href="https://www.umy.ac.id" class="navbar-brand col-lg-12 mr-0"
+                style="font-size: 0.9rem;line-height: 0px;letter-spacing: -0.003em;font-weight: 400;font-style: normal;">
+                <img src="assets/img/logo_umy.png" alt="logo" style="width: 32px">
+                Universitas Muhammadiyah Yogyakarta</a>
         </div>
-        <ul class="navbar-nav px-3">
-            <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#">Sign out</>
-            </li>
-        </ul>
     </nav>
-
+    <!-- End Navbar -->
     <div class="container-fluid">
         <div class="row">
+            <!-- Sidebar -->
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
@@ -93,7 +88,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img src="assets/img/icons/education.svg" alt="" width="28" height="28" title="Mahasiswa">
+                                <img src="assets/img/icons/education.svg" alt="" width="28" height="28"
+                                    title="Mahasiswa">
                                 Mahasiswa
                             </a>
                         </li>
@@ -125,7 +121,8 @@
                     </ul>
                 </div>
             </nav>
-
+            <!-- End Sidebar -->
+            <!-- Konten Utama -->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"
                     class="chartjs-size-monitor">
@@ -292,6 +289,7 @@
                     </table>
                 </div>
             </main>
+            <!-- End Konten Utama -->
         </div>
     </div>
     <script src="assets/js/vendor/jquery.slim.min.js">
@@ -301,9 +299,8 @@
     </script>
     <script src="assets/js/bootstrap.bundle.min.js">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="assets/dashboard/dashboard.js"></script>
+    <script src="assets/js/dashboard.js"></script>
 
 </body>
 
