@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="keluar.php">
                         <img src="assets/img/icons/log-out.svg" alt="" width="28" height="28" title="Keluar">
                         Keluar
                     </a>
