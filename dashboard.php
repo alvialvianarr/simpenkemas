@@ -61,54 +61,17 @@
 </head>
 
 <body>
-
+    <!-- Load Navbar -->
+    <div class="header">
+        <?php include 'navbar.php' ?>
+    </div>
+    <!-- End Navbar -->
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar -->
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <img src="assets/img/icons/home.svg" alt="" width="28" height="28" title="Beranda">
-                                Beranda <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/img/icons/education.svg" alt="" width="28" height="28"
-                                    title="Mahasiswa">
-                                Mahasiswa
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/img/icons/book-open.svg" alt="" width="28" height="28" title="Blok">
-                                Blok
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/img/icons/edit.svg" alt="" width="28" height="28" title="Nilai">
-                                Nilai
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/img/icons/settings.svg" alt=" " width="28" height="28"
-                                    title="Pengaturan">
-                                Pengaturan
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/img/icons/log-out.svg" alt="" width="28" height="28" title="Keluar">
-                                Keluar
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <!-- Load Sidebar -->
+            <div class="sidebar">
+                <?php include 'sidebar.php' ?>
+            </div>
             <!-- End Sidebar -->
             <!-- Konten Utama -->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
