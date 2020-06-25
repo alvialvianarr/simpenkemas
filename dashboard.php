@@ -11,53 +11,9 @@
 
     <!-- Favicons -->
     <link rel="icon" href="assets/img/logo_umy.png" sizes="32x32" type="image/png">
-    <meta name="theme-color" content="#563d7c">
 
-    <style>
-    .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
-    }
-    </style>
     <!-- Custom styles for this template -->
     <link href="assets/css/dashboard.css" rel="stylesheet">
-    <style type="text/css">
-    /* Chart.js */
-    @-webkit-keyframes chartjs-render-animation {
-        from {
-            opacity: 0.99
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes chartjs-render-animation {
-        from {
-            opacity: 0.99
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    .chartjs-render-monitor {
-        -webkit-animation: chartjs-render-animation 0.001s;
-        animation: chartjs-render-animation 0.001s;
-    }
-    </style>
 </head>
 
 <body>
