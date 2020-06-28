@@ -1,58 +1,73 @@
-<!DOCTYPE html>
+< !DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Selamat Datang di SIMPENKEMAS</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Favicons -->
-    <link rel="icon" href="assets/img/logo_umy.png" sizes="32x32" type="image/png">
-    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
-
-
-    <style>
-    .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
-    }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="assets/css/signin.css" rel="stylesheet">
-</head>
-
-<body class="text-center">
-    <form class="form-signin">
-        <img class="mb-4" src="assets/img/logo_umy.png" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
+    <head>
+        <title>Login SIMPENKEMAS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- =============================================================================================== -->
+        <link rel="icon" type="image/png" href="assets/img/logo_umy.png" />
+        <!-- =============================================================================================== -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <!-- =============================================================================================== -->
+        <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+        <!-- =============================================================================================== -->
+        <link rel="stylesheet" type="text/css" href="assets/vendor/csshamburgers/hamburgers.min.css">
+        <!-- =============================================================================================== -->
+        <link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
+        <!-- =============================================================================================== -->
+        <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+        <link rel="stylesheet" type="text/css"href="assets/css/main.css">
+        <!-- =============================================================================================== -->
+    </head>
+    <body>
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <div class="login100-pic js-tilt" data-tilt>
+                        <img src="assets/img/logo_umy.png" alt="IMG" width="268" height="242"></div>
+                        <form class="login100-form validate-form" method="post" action="#">
+                        <span class="login100-form-title">OSCE Login </span>
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="username" placeholder="Username">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-address-book" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="password" placeholder="Password">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="container-login100-form-btn">
+                        <input type="submit" class="login100-form-btn" value="Login">Login
+                    </div>
+                    <div class="text-center p-t-12">
+                        <span class="txt1">Forgot</span>
+                        <a class="txt2"href="#">Username / Password? </a>
+                    </div>
+                    <div class="text-center p-t-136">
+                        <a class="txt2" href="#">Create your Account<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
-    </form>
-
-
-</body>
-</>
+    <!-- =============================================================================================== -->
+    <script src="assets/vendor/jquery/jquery3.2.1.min.js"></script>
+    <!-- =============================================================================================== -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- =============================================================================================== -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- =============================================================================================== -->
+    <script src="assets/tilt/tilt.jquery.min.js "></script>
+    <script>$('.js-tilt').tilt({scale: 1.1})</script>
+    <!-- =============================================================================================== -->
+    <script src="assets/js/main.js"></script>
+    </body>
+</html>
