@@ -35,12 +35,17 @@
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Mahasiswa</h1>
                 </div>
+                <?php include 'tambah_mhs.php' ?>
+                <br><br>
+                <?php include 'tambah_pen_mhs.php' ?>
             </main>
             <!-- End Konten Utama -->
         </div>
     </div>
     <script src="assets/js/vendor/jquery.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery.slim.min.js"><\/script>')</script>
+    <script>
+    window.jQuery || document.write('<script src="assets/js/jquery.slim.min.js"><\/script>')
+    </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
