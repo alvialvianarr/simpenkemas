@@ -51,17 +51,27 @@
                             <input class="form-control" type="text" name="sks" id="sks" placeholder="Masukkan SKS">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-form-label col-sm-2 pt-0">Jenis Penilaian</label>
-                        <div class="col-sm-10">
-                            <div class="form-check-inline">
-                                <input class="form-check-input" type="radio" name="tutorial" id="tutorial" checked>
-                                <label class="form-check-label" for="tutorial">Tutorial</label>
-                                <input class="form-check-input" type="radio" name="mentoring" id="mentoring">
-                                <label class="form-check-label" for="mentoring">Mentoring</label>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Jenis Penilaian</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jenis_penilaian" id="tutorial"
+                                        value="tutorial" checked>
+                                    <label class="form-check-label" for="tutorial">
+                                        Tutorial
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jenis_penilaian" id="mentoring"
+                                        value="mentoring">
+                                    <label class="form-check-label" for="mentoring">
+                                        Mentoring
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </fieldset>
                     <div class="form-group row">
                         <label for="tugas1" class="col-sm-2 col-form-label">Tugas 1</label>
                         <div class="col-sm-10">

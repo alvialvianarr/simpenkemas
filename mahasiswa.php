@@ -42,11 +42,11 @@
             <!-- End Konten Utama -->
         </div>
     </div>
-    <script src="assets/js/vendor/jquery.slim.min.js"></script>
+    <!-- <script src="assets/js/vendor/jquery.slim.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="assets/js/jquery.slim.min.js"><\/script>')
     </script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>
