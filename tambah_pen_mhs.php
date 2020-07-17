@@ -57,8 +57,6 @@
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="tutorial" id="tutorial" checked>
                                 <label class="form-check-label" for="tutorial">Tutorial</label>
-                            </div>
-                            <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="mentoring" id="mentoring">
                                 <label class="form-check-label" for="mentoring">Mentoring</label>
                             </div>
