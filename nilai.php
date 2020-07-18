@@ -36,6 +36,8 @@
                     <h1 class="h2">Nilai</h1>
                 </div>
                 <?php include 'input_nilai.php' ?>
+                <br>
+                <?php include 'tampil_nilai.php' ?>
             </main>
             <!-- End Konten Utama -->
         </div>
