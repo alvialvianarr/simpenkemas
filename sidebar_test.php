@@ -36,7 +36,7 @@
                  <span class="menu-collapsed">Tambah Mahasiswa</span>
              </a>
              <a href="#" class="list-group-item list-group-item-action bg-success text-white">
-                 <span class="menu-collapsed">Tambah Penilaian Mahasiswa</span>
+                 <span class="menu-collapsed">Penilaian Mahasiswa</span>
              </a>
          </div>
 
